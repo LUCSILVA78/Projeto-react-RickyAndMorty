@@ -1,0 +1,160 @@
+body {
+  background-image: url(../imagem/imagem.jpg), url(../imagem/imagem.jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-size: 50% 100%; 
+  background-position: left top, right top;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(14, 154, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.wrapper {
+  border: 2px solid #3ca362;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "card info-img"
+    "numero buttons";
+  grid-gap: 20px;
+  background: linear-gradient(135deg, #353299, #b5f416);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.card {
+  grid-area: card;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #93a808, #57f088);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.card-info {
+  text-align: center;
+  color: darkblue;
+  padding: 10px;
+}
+
+.card-info h2 {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+.card-info p {
+  font-size: 1em;
+}
+
+.info-img {
+  grid-area: info-img;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.info-img .episodes {
+  width: 100%;
+  text-align: left;
+  color: rgb(0, 139, 81);
+}
+
+.info-img .episode {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.numero {
+  grid-area: numero;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(135deg, #60cc69, #021408);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+}
+
+.numero input {
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.buttons {
+  grid-area: buttons;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
